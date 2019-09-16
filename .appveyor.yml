@@ -1,7 +1,7 @@
 version: '{build}'
 pull_requests:
   do_not_increment_build_number: true
-os: Visual Studio 2019
+os: Visual Studio 2017
 test: off
 branches:
   only:
@@ -9,7 +9,7 @@ branches:
 clone_folder: C:\fall-2019
 build_script:
   - cd C:\fall-2019
-  - cmake -G "Visual Studio 16 2019 Win64" .
+  - cmake -G "Visual Studio 15 2017 Win64" .
   - set MSBuildLogger="C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
   - set MSBuildOptions=/v:m /p:Configuration=Release /logger:%MSBuildLogger%
   - msbuild %MSBuildOptions% tinyrender.sln
