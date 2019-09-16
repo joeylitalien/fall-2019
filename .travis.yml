@@ -37,7 +37,5 @@ matrix:
         - if [ "${TRAVIS_OS_NAME}" = "osx" ]; then brew cleanup; fi
         - if [ "${TRAVIS_OS_NAME}" = "osx" ]; then find /usr/local/Homebrew \! -regex ".+\.git.+" -delete; fi
       before_install: brew install glew sdl2
-      install:
-        - cd tinyrender/
       script:
         - mkdir build && cd build && cmake ../ && make -j 2
