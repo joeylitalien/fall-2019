@@ -1,5 +1,5 @@
-# ECSE 446/546 & COMP 598/599 Fall 2019 TinyRender Codebase
-Realistic/Advanced Image Synthesis 
+# ECSE 446/546 & COMP 598/599 Fall 2019 TinyRender Codebase 
+Realistic/Advanced Image Synthesis [![Build Status](https://travis-ci.com/joeylitalien/fall-2019.svg?branch=master)](https://travis-ci.com/joeylitalien/fall-2019)
 
 Course Website: http://www.cim.mcgill.ca/~derek/ecse446.html
 
