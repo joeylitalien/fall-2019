@@ -21,9 +21,8 @@ matrix:
           - g++-5
           - cmake
       before_install:
-        - sudo dpkg --configure -a
-        - sudo apt update -qq
         - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6B05F25D762E3157
+        - sudo apt update -qq
         - sudo apt install -qq libglew-dev libsdl2-dev
       install:
         - cd tinyrender/
